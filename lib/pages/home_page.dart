@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         // iconTheme: IconThemeData(color: Colors.blueGrey),
         centerTitle: true,
         
-        title:Text("Catalog App",
+        title:Text("Catalog App"
         //textScaleFactor: 1.7,
         // style: TextStyle(color: Colors.blueGrey),
         ),

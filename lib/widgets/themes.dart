@@ -9,11 +9,11 @@ class MyTheme {
         color: Colors.white,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.blueGrey),
-        textTheme: Theme.of(context).textTheme,
-        // textTheme: TextTheme(
-        //   headline6: TextStyle(
-        //     fontSize: 20,
-        //   color:Colors.blueGrey)),
+        //textTheme: Theme.of(context).textTheme,
+        textTheme: TextTheme(
+          headline6: TextStyle(
+            fontSize: 20,
+          color:Colors.blueGrey)),
       )
       );
   static ThemeData darkTheme(BuildContext context) => ThemeData(
