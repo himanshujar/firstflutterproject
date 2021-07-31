@@ -86,6 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                             fontSize: 20,
                           )),
                       validator: (value) {
+
                         if (value.isEmpty) {
                           return "Password cannot be empty";
                         } else if (value.length < 6) {
