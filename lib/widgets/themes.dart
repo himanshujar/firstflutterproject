@@ -12,7 +12,7 @@ class MyTheme {
         //textTheme: Theme.of(context).textTheme,
         textTheme: TextTheme(
           headline6: TextStyle(
-            fontSize: 20,
+            fontSize: 22,
           color:Colors.blueGrey)),
       )
       );
