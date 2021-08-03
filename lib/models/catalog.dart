@@ -1,16 +1,17 @@
-class CatalogModel{
-static final items = [
-  Item(
-    id: 1,
-    name: "Truffle",
-    desc: "Chocolaca special",
-    price: 450,
-    color: "#33505a",
-    image:
-        "https://blog.chron.com/foodchronicles/files/2014/12/black-truffle001.jpg",
-  )
-];
+class CatalogModel {
+  static  List<Item> items = [
+    Item(
+      id: 1,
+      name: "Truffle",
+      desc: "Chocolaca special",
+      price: 450,
+      color: "#33505a",
+      image:
+          "https://blog.chron.com/foodchronicles/files/2014/12/black-truffle001.jpg",
+    )
+  ];
 }
+
 class Item {
   final int id;
   final String name;
@@ -20,6 +21,22 @@ class Item {
   final String image;
 
   Item({this.id, this.name, this.desc, this.price, this.color, this.image});
+  factory Item.fromMap(Map<String, dynamic> map) {
+   return Item(
+      id: map["id"],
+      name: map["name"],
+      desc: map["desc"],
+      price: map["price"],
+      color: map["color"],
+      image: map["image"],
+    );
+  }
+  toMap() => {
+    "id":id,
+    "name":name,
+    "desc":desc,
+    "price":price,
+    "color":color,
+    "image":image,
+  };
 }
-
-
